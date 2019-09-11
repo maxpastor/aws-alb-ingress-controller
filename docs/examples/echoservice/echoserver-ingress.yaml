@@ -6,10 +6,10 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/tags: Environment=dev,Team=test
+    alb.ingress.kubernetes.io/subnets: subnet-09c70f0a4f26d425e, subnet-06bee6f187f378b39, subnet-0a1c6eeb1c5eb717a
 spec:
   rules:
-    - host: echoserver.example.com
+    - host: echoserver.eks.tactill.com
       http:
         paths:
           - path: /
