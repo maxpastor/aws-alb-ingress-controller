@@ -67,4 +67,4 @@ spec:
             #  value: SECRETVALUE
           # Repository location of the ALB Ingress Controller.
           image: docker.io/amazon/aws-alb-ingress-controller:v1.1.2
-      serviceAccountName: alb-ingress
+      serviceAccountName: alb-ingress-controller
